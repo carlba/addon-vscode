@@ -33,6 +33,13 @@ services:
 options:
   packages: []
   init_commands: []
+log_level: info
+certfile: fullchain.pem
+keyfile: privkey.pem
+packages: []
+init_commands: []
+environment:
+  - EXTENSIONS_GALLERY='{"serviceUrl":"https://marketplace.visualstudio.com/_apis/public/gallery","cacheUrl":"https://vscode.blob.core.windows.net/gallery/index","itemUrl":"https://marketplace.visualstudio.com/items"}'
 schema:
   log_level: list(trace|debug|info|notice|warning|error|fatal)?
   config_path: str?
