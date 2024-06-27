@@ -95,5 +95,11 @@
   "workbench.iconTheme": "vs-seti",
   "yaml.format.enable": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.rulers": [80, 88, 100, 120]
+  "editor.rulers": [80, 88, 100, 120],
+
+  "extensionsGallery": {
+    "serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
+    "cacheUrl": "https://vscode.blob.core.windows.net/gallery/index",
+    "itemUrl": "https://marketplace.visualstudio.com/items"
+  }
 }
