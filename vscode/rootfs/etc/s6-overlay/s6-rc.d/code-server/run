@@ -24,9 +24,13 @@ options+=(--disable-update-check)
 # Disable code authentication, we use HA authentication
 options+=(--auth none)
 
+export EXTENSIONS_GALLERY='{"serviceUrl":"https://marketplace.visualstudio.com/_apis/public/gallery","cacheUrl":"https://vscode.blob.core.windows.net/gallery/index","itemUrl":"https://marketplace.visualstudio.com/items"}'
+
 # Export env variables for the Home Assistant extension
 export HASS_SERVER="http://supervisor/core"
 export HASS_TOKEN="${SUPERVISOR_TOKEN:-}"
+export EXTENSIONS_GALLERY='{"serviceUrl":"https://marketplace.visualstudio.com/_apis/public/gallery","cacheUrl":"https://vscode.blob.core.windows.net/gallery/index","itemUrl":"https://marketplace.visualstudio.com/items"}'
+
 
 # Run the code server
 cd "${config_path}" || bashio::exit.nok "Could not change working directory"
