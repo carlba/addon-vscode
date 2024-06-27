@@ -1,10 +1,11 @@
 ---
-name: Studio Code Server
+name: Studio Code Server (Carlba)
 version: dev
-slug: vscode
-description: Fully featured Visual Studio Code (VSCode) experience integrated in the Home Assistant frontend.
-url: https://github.com/hassio-addons/addon-vscode
-codenotary: codenotary@frenck.dev
+slug: vscode-carlba
+description:
+  Fully featured Visual Studio Code (VSCode) experience integrated in the Home Assistant frontend.
+url: https://github.com/carlba/addon-vscode"
+codenotary: genzorg@gmail.com
 ingress: true
 ingress_port: 1337
 ingress_stream: true
